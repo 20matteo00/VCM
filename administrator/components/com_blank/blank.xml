@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<extension type="component" method="upgrade">
+    <name>COM_BLANK</name>
+    <author>Sergey Tolkachyov</author>
+    <authorEmail>info@web-tolk.ru</authorEmail>
+    <copyright>Sergey Tolkachyov</copyright>
+    <license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
+    <version>2.0.0</version>
+    <description>COM_BLANK_DESC</description>
+    <creationDate>Nov 2023</creationDate>
+    <namespace path="src/">Joomla\Component\Blank</namespace>
+    <scriptfile>script.php</scriptfile>
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/com_blank.ini</language>
+        <language tag="ru-RU">language/ru-RU/com_blank.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_BLANK</menu>
+        <files folder="admin">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/com_blank.ini</language>
+            <language tag="en-GB">language/en-GB/com_blank.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/com_blank.ini</language>
+            <language tag="ru-RU">language/ru-RU/com_blank.sys.ini</language>
+        </languages>
+    </administration>
+    <updateservers>
+        <server type="extension" priority="1" name="WebTolk - Blank page updates">https://web-tolk.ru/component/swjprojects/jupdate?element=com_blank</server>
+    </updateservers>
+    <changelogurl>https://web-tolk.ru/jchangelog?element=com_blank</changelogurl>
+</extension>
